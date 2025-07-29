@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico - Nicolás Alvarez</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Portada */
+        .portada {
+            background: white;
+            border-radius: 15px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .portada h1 {
+            font-size: 3.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .portada h2 {
+            font-size: 2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .info-personal {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            display: inline-block;
+        }
+
+        .info-personal h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .info-personal p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        /* Navegación */
+        .nav-menu {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        /* Secciones */
+        .seccion {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .seccion h2 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .seccion h3 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin: 25px 0 15px 0;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+
+        .seccion p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .seccion ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .seccion li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .pregunta {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #e74c3c;
+        }
+
+        .pregunta h4 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        /* Anexos */
+        .anexo {
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .anexo h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .portada h1 {
+                font-size: 2.5em;
+            }
+            
+            .nav-menu ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Portada -->
+        <div class="portada" id="portada">
+            <h1>Nicolás Alvarez</h1>
+            <h2>Abogacía</h2>
+            <h2>Legajo: 559072</h2>
+        </div>
+
+        <!-- Navegación -->
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#portada">Portada</a></li>
+                <li><a href="#desarrollo">Desarrollo</a></li>
+            </ul>
+        </div>
+
+        <!-- Desarrollo del Tema -->
+        <div class="seccion" id="desarrollo">
+            <h2>Acerca de mi</h2>
+            
+            <div class="pregunta">
+                <h4>¿Cuál es tu lugar favorito?</h4>
+                <p>Mi lugar favorito es la playa. Es un espacio donde encuentro paz y me olvido por completo de las responsabilidades y preocupaciones del día a día. Me encanta simplemente mirar el mar, sin hacer nada, solo dejarme llevar por ese momento. También disfruto mucho estar en el agua, porque ahí me siento libre, me divierto como cuando era chico. Es un lugar que me reconecta conmigo mismo y me hace sentir bien de una forma muy simple..</p>
+            </div>
+
+            <div class="pregunta">
+                <h4>¿Qué recuerdos te vienen a la mente de tu niñez? ¿Podrías describir cómo eran los momentos de reunión en tu familia cuando eras niño?</h4>
+                <p>Uno de los recuerdos más lindos que tengo de mi niñez es jugar en la plaza que estaba justo frente a mi casa. Desde temprano salía a la vereda, mirando a todos lados para ver si aparecía alguno de mis amigos. Jugábamos a las bolitas, a la pelota, a la escondida... pasábamos horas divirtiéndonos.
+
+                    En cuanto a los momentos de reunión familiar, eran principalmente con mi mamá y mi hermano, sentados en la mesa de la cocina. Mi papá se fue a Uruguay cuando yo tenía 4 años, así que no estuvo presente durante mi infancia. A pesar de eso, recuerdo con mucho cariño esas charlas con mi mamá, donde ella nos transmitía sus valores, nos aconsejaba y siempre trataba de guiarnos por el buen camino. Esos momentos fueron muy importantes para mí.</p>
+            </div>
+
+            <div class="pregunta">
+                <h4>Si pudieras mencionar dos momentos importantes de tu vida en la adolescencia, ¿Cuáles serían? ¿Por qué?</h4>
+                <p>Los dos momentos más importantes de mi adolescencia fueron:</p>
+                <ul>
+                    <li><strong>Finalizar mis estudios secundarios:</strong> Para mí significó un gran logro, pero sobre todo fue importante por el enorme esfuerzo que hizo mi mamá para que yo pudiera terminarlos. Ella siempre valoró muchísimo la educación, y terminar el secundario era algo que consideraba fundamental. Por eso, poder cumplir con esa meta fue también una forma de agradecerle todo su apoyo.</li>
+                    <li><strong>Comenzar a trabajar en una pizzería:</strong> Fue mi primer trabajo y marcó el inicio de mi independencia. Empecé a aprender un oficio, a manejar mi propia economía y a adquirir responsabilidades. Además, me enseñaron a cocinar cosas sencillas como pizzas y empanadas, y hasta el día de hoy disfruto mucho prepararlas para amigos o reuniones. Siento que es algo que quedó conmigo y me permite compartir con los demás.</li>
+                </ul>
+            </div>
+
+            <div class="pregunta">
+                <h4>¿Qué cosas te resultan simpáticas, cuáles te preocupan?; ¿Qué te agrada de la sociedad y qué te gustaría cambiar?</h4>
+                <p><strong>Lo que me resulta simpático:</strong> Me resulta muy lindo ver cuando una persona puede ayudar a otra a resolver sus problemas o inquietudes. Me parece algo admirable que alguien, al ver que otra persona está atravesando un momento difícil, se tome el tiempo de acompañarla o brindarle una solución. Que alguien logre aliviarle la vida a otro, aunque sea un poco, me parece algo muy valioso.</p>
+                <p><strong>Lo que me preocupa:</strong> Lo que más me preocupa es la corrupción y el hecho de que muchas personas toman malas decisiones o tienen malas acciones solo por beneficio personal. A veces se prioriza lo individual o económico, sin pensar en las consecuencias que eso puede tener para los demás.</p>
+                <p><strong>Lo que me agrada de la sociedad:</strong> De la sociedad valoro que, a pesar de todo, siempre hay personas solidarias, honestas, que se comprometen y ayudan a quienes lo necesitan. Esa parte humana, que aparece en los momentos más difíciles, es algo que me genera esperanza.</p>
+                <p><strong>Lo que me gustaría cambiar:</strong> Me gustaría cambiar justamente lo contrario a eso: que cada vez haya más personas que actúen con conciencia e integridad, sin dejarse llevar únicamente por intereses personales o económicos. Creo que incluso cuando una buena acción trae consigo un beneficio, lo importante es que no se pierda la honestidad ni los valores.</p>
+            </div>
+
+            <div class="pregunta">
+                <h4>Cuando pensás en tu futura profesión, ¿Qué te inspira y te da confianza? Expresá cuáles son tus expectativas respecto de la profesión elegida.</h4>
+                <p><strong>Lo que me inspira:</strong> Lo que más me inspira de la abogacía es la posibilidad de tener el conocimiento necesario para manejar con seguridad los aspectos legales de mis propios proyectos, como por ejemplo una empresa o el desarrollo de un software propio. Me gustaría tener la capacidad de transformar una idea en algo que me pertenezca legalmente, sin depender de otros para hacerlo.</p>
+                <p><strong>Mis expectativas:</strong> Mis expectativas con esta carrera van justamente por ese camino: poder formarme con una base sólida, entender cómo funciona el mundo legal y aplicarlo tanto en mis propios proyectos como para aportar valor a los demás. Quiero tener herramientas que me den autonomía, pero también que me permitan ser útil a quienes me rodean.</p>
+            </div>
+
+            <div class="pregunta">
+                <h4>Si buscaras un objeto que te represente, ¿Cuál sería? Contanos su historia.</h4>
+                <p>Creo que un objeto que me representa es una llave. Siento que tiene mucho que ver conmigo porque simboliza abrir puertas, avanzar, y también cuidar lo que uno va logrando. Me gusta aprender cosas que me sirvan para tener independencia, como entender lo legal de una empresa o registrar una idea como propia. Para mí, cada nuevo conocimiento es como una llave más que voy sumando.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
